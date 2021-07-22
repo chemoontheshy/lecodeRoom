@@ -74,7 +74,6 @@ vector<int> PAlogrithm::intersect(vector<int>& nums1, vector<int>& nums2)
 		for (auto i : nums2) {
 			if (count(nums1.begin(), nums1.end(), i)) {
 				nums.push_back(i);
-				nums.
 			}
 			
 		}
