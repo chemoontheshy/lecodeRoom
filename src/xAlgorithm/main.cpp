@@ -75,7 +75,7 @@ int main()
 								{'.','.','.','.','.','.','.','.','.'}};
 	auto board_flag = pAlogrithm.isValidSudoku(board);
 	cout << "board_flag: " << board_flag << endl;*/
-	vector<char> string_list{ 'o','l','l','e','h' };
+	/*vector<char> string_list{ 'o','l','l','e','h' };
 	pAlogrithm.reverseString(string_list);
 	for (auto i : string_list) {
 		cout << "string_list: " << i << endl;
@@ -85,7 +85,12 @@ int main()
 	cout << "temp_int: " << temp_int<< endl;
 
 	
-	auto firstUniqChar_index = pAlogrithm.firstUniqChar("leetcode");
-	cout << "firstUniqChar_index" << firstUniqChar_index << endl;
+	auto firstUniqChar_index = pAlogrithm.firstUniqChar("leeltcode");
+	cout << "firstUniqChar_index" << firstUniqChar_index << endl;*/
+
+	string s = "anagram";
+	string t = "nagaram";
+	auto temp_anagram = pAlogrithm.isAnagram(s,t);
+	cout << "temp_anagram" << temp_anagram << endl;
 	return 0;
 }

@@ -219,8 +219,31 @@ int PAlogrithm::reverseInt(int x)
 
 int PAlogrithm::firstUniqChar(string s)
 {
+	size_t temp_char[26]{0};
 	for (int i = 0; i < s.length(); i++) {
-		
+		temp_char[s[i] - 'a']++;
 	}
-	return 0;
+	for (int i = 0; i < s.length(); i++) {
+		if (temp_char[s[i] - 'a'] == 1)
+			return i;
+	}
+	return -1;
+}
+
+bool PAlogrithm::isAnagram(string s, string t)
+{
+	vector<char> temp_s;
+	vector<char> temp_t;
+	if (s.length() != t.length()) {
+		return false;
+	}
+	size_t i = 0;
+	while (i < s.length()) {
+		temp_s.push_back(s[i]);
+		temp_t.push_back(t[i]);
+		i++;
+	}
+	sort(temp_s.begin(),temp_s.end());
+	sort(temp_t.begin(), temp_t.end());
+	return temp_s == temp_t ? true : false ;
 }

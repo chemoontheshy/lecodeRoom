@@ -125,6 +125,14 @@ public:
 	/// <param name="s">字符串</param>
 	/// <returns>存在，返回它的索引。如果不存在，则返回 -1</returns>
 	int firstUniqChar(string s);
+
+	/// <summary>
+	/// 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
+	/// </summary>
+	/// <param name="s">字符串 s</param>
+	/// <param name="t">字符串 t</param>
+	/// <returns> s 和 t 互为字母异位词返回true,否则返回false</returns>
+	bool isAnagram(string s, string t);
 private:
 
 };
