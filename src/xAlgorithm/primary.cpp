@@ -309,3 +309,24 @@ int PAlogrithm::myAtoi(string s)
 	}
 	return positive ? (int)temp_s : (int)(-temp_s);
 }
+
+int PAlogrithm::strStr(string haystack, string needle)
+{
+
+	size_t haystack_index = 0;
+	size_t needle_index = 0;
+	while (haystack_index < haystack.length() && needle_index < needle.length()) {
+		if (haystack[haystack_index] == needle[needle_index]) {
+			haystack_index++;
+			needle_index++;
+		}
+		else {
+			haystack_index= haystack_index-needle_index+1;
+			needle_index=0;
+		}
+	}
+	if (needle_index == needle.length()) {
+		return haystack_index - needle_index;
+	}
+	return -1;
+}

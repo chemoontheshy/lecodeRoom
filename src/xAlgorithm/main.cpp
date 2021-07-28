@@ -97,8 +97,12 @@ int main()
 	auto temp_r_s = pAlogrithm.isPalindrome(r_s);
 	cout << "temp_r_s" << temp_r_s << endl;*/
 
-	string int_string = "   +0 123";
+	/*string int_string = "   +0 123";
   	auto temp_int_string = pAlogrithm.myAtoi(int_string);
-	cout << "temp_int_string :" << temp_int_string << endl;
+	cout << "temp_int_string :" << temp_int_string << endl;*/
+
+	string str_string = "mississippi";
+	auto index_str_string = pAlogrithm.strStr(str_string, "issip");
+	cout << "index_str_string :" << index_str_string << endl;
 	return 0;
 }

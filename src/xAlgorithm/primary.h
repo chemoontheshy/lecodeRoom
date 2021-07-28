@@ -148,6 +148,8 @@ public:
 	/// <param name="s">字符串</param>
 	/// <returns>有符号整数</returns>
 	int myAtoi(string s);
+
+	int strStr(string haystack, string needle);
 private:
 
 };
