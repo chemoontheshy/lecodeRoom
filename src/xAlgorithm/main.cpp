@@ -92,5 +92,9 @@ int main()
 	string t = "nagaram";
 	auto temp_anagram = pAlogrithm.isAnagram(s,t);
 	cout << "temp_anagram" << temp_anagram << endl;
+
+	string r_s = "";
+	auto temp_r_s = pAlogrithm.isPalindrome(r_s);
+	cout << "temp_r_s" << temp_r_s << endl;
 	return 0;
 }

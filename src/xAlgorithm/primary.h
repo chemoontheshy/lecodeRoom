@@ -133,6 +133,14 @@ public:
 	/// <param name="t">字符串 t</param>
 	/// <returns> s 和 t 互为字母异位词返回true,否则返回false</returns>
 	bool isAnagram(string s, string t);
+
+	/// <summary>
+	/// 双指针
+	/// 给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
+	/// </summary>
+	/// <param name="s">字符串</param>
+	/// <returns>是回串文返回true,否则返回false</returns>
+	bool isPalindrome(string s);
 private:
 
 };

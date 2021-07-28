@@ -247,3 +247,31 @@ bool PAlogrithm::isAnagram(string s, string t)
 	sort(temp_t.begin(), temp_t.end());
 	return temp_s == temp_t ? true : false ;
 }
+
+bool PAlogrithm::isPalindrome(string s)
+{
+	if (s.length() == 0) {
+		return true;
+	}
+	size_t right = 0;
+	for (size_t i = 0; i < s.length(); i++) {
+		if ('a' <= s[i] && 'z' >= s[i] || '0' <= s[i] && '9' >= s[i]) {
+			s[right++] = s[i];
+		}
+		else if ('A' <= s[i] && 'Z' >= s[i]) {
+			s[right++] = s[i]+32;
+		}
+	}
+	if (right < 1) {
+		return false;
+	}
+	size_t left = 0;
+	while (left < right-1) {
+		if (s[left] != s[right - 1]) {
+			return false;
+		}
+		left++;
+		right--;
+	}
+	return true;
+}
