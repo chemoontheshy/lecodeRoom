@@ -141,6 +141,13 @@ public:
 	/// <param name="s">字符串</param>
 	/// <returns>是回串文返回true,否则返回false</returns>
 	bool isPalindrome(string s);
+
+	/// <summary>
+	/// 将字符串转换成一个 32 位有符号整数
+	/// </summary>
+	/// <param name="s">字符串</param>
+	/// <returns>有符号整数</returns>
+	int myAtoi(string s);
 private:
 
 };

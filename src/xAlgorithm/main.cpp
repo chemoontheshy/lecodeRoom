@@ -88,13 +88,17 @@ int main()
 	auto firstUniqChar_index = pAlogrithm.firstUniqChar("leeltcode");
 	cout << "firstUniqChar_index" << firstUniqChar_index << endl;*/
 
-	string s = "anagram";
+	/*string s = "anagram";
 	string t = "nagaram";
 	auto temp_anagram = pAlogrithm.isAnagram(s,t);
 	cout << "temp_anagram" << temp_anagram << endl;
 
 	string r_s = "";
 	auto temp_r_s = pAlogrithm.isPalindrome(r_s);
-	cout << "temp_r_s" << temp_r_s << endl;
+	cout << "temp_r_s" << temp_r_s << endl;*/
+
+	string int_string = "   +0 123";
+  	auto temp_int_string = pAlogrithm.myAtoi(int_string);
+	cout << "temp_int_string :" << temp_int_string << endl;
 	return 0;
 }

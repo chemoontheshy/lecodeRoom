@@ -275,3 +275,37 @@ bool PAlogrithm::isPalindrome(string s)
 	}
 	return true;
 }
+
+int PAlogrithm::myAtoi(string s)
+{
+	double temp_s = 0;
+	bool flag = true;
+	//positive and negative
+	bool positive = true;
+	for (size_t index = 0; index < s.length(); index++) {
+		if (flag &&s[index] == ' ') {
+			continue;
+		}
+		else if (flag && s[index] == '+') {
+			flag = false;
+			continue;
+		}
+		else if (flag && s[index] == '-') {
+			flag = false;
+			positive = false;
+			continue;
+		}
+		else if (s[index] < '0' || s[index]>'9') {
+			break;
+		}
+		else {
+			flag = false;
+			temp_s = temp_s * 10 + (s[index] - static_cast<int>('0'));
+			if (temp_s > INT32_MAX) {
+				return positive ? INT32_MAX : INT32_MIN;
+			}
+			
+		}
+	}
+	return positive ? (int)temp_s : (int)(-temp_s);
+}
