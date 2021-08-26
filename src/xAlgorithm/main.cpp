@@ -1,10 +1,20 @@
 #include "primary.h"
+#include "leetcodelist.h"
+#include "tree.h"
 using namespace std;
 
 
+void printNode(CodeList::ListNode* printlist) {
+	while (printlist != nullptr) {
+		cout << printlist->val << endl;
+		printlist = printlist->next;
+	}
+}
+
 int main()
 {
-	PAlogrithm pAlogrithm;
+	CTree::TreeNode* myTree = new CTree::TreeNode(2);
+	//PAlogrithm pAlogrithm;
 	////≤‚ ‘1
 	//vector<int> nums{1,2,2};
 	//PAlogrithm pAlogrithm;
@@ -84,7 +94,7 @@ int main()
 	auto temp_int = pAlogrithm.reverseInt(1264632439);
 	cout << "temp_int: " << temp_int<< endl;
 
-	
+
 	auto firstUniqChar_index = pAlogrithm.firstUniqChar("leeltcode");
 	cout << "firstUniqChar_index" << firstUniqChar_index << endl;*/
 
@@ -98,11 +108,36 @@ int main()
 	cout << "temp_r_s" << temp_r_s << endl;*/
 
 	/*string int_string = "   +0 123";
-  	auto temp_int_string = pAlogrithm.myAtoi(int_string);
+	auto temp_int_string = pAlogrithm.myAtoi(int_string);
 	cout << "temp_int_string :" << temp_int_string << endl;*/
 
-	string str_string = "mississippi";
-	auto index_str_string = pAlogrithm.strStr(str_string, "issip");
-	cout << "index_str_string :" << index_str_string << endl;
-	return 0;
+	//string str_string = "mississippi";
+	//auto index_str_string = pAlogrithm.strStr(str_string, "issip");
+	//cout << "index_str_string :" << index_str_string << endl;
+
+
+	//printlist = last;
+	//CodeList::ListNode* printlist;
+	//CodeList::ListNode* slow = nullptr;
+	//CodeList::ListNode* temp = nullptr;
+	//CodeList::ListNode* head5 = new CodeList::ListNode(5);
+	//CodeList::ListNode* head4 = new CodeList::ListNode(4, head5);
+	//CodeList::ListNode* head3 = new CodeList::ListNode(3, head4);
+	//CodeList::ListNode* head2 = new CodeList::ListNode(2, head3);
+	//CodeList::ListNode* head1 = new CodeList::ListNode(1, head2);
+	//CodeList::removeNthFromEnd(head1, 1);
+	//printNode(head1);
+	//cout << "-------" << endl;
+	//auto mt = CodeList::reverseList(head1);
+	//printNode(mt);
+	//CodeList::ListNode* l4 = new CodeList::ListNode(4);
+	//CodeList::ListNode* l3 = new CodeList::ListNode(3, l4);
+	//CodeList::ListNode* l2 = new CodeList::ListNode(2, l4);
+	//CodeList::ListNode* m_l2 = new CodeList::ListNode(1, l3);
+	//CodeList::ListNode* m_l1 = new CodeList::ListNode(1, l2);
+	//printNode(m_l1);
+	//auto twolist = CodeList::mergeTwoLists(m_l1, m_l2);
+	//auto num = CodeList::recursion(4);
+	//cout << num << endl;
+
 }

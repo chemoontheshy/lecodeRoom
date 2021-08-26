@@ -143,11 +143,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\xAlgorithm\leetcodelist.cpp" />
     <ClCompile Include="..\..\src\xAlgorithm\main.cpp" />
     <ClCompile Include="..\..\src\xAlgorithm\primary.cpp" />
+    <ClCompile Include="..\..\src\xAlgorithm\tree.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\xAlgorithm\leetcodelist.h" />
     <ClInclude Include="..\..\src\xAlgorithm\primary.h" />
+    <ClInclude Include="..\..\src\xAlgorithm\tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
